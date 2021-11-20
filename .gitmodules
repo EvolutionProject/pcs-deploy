@@ -1,0 +1,12 @@
+[submodule "submodules/core"]
+	path = submodules/core
+	url = git@github.com:pancakeswap/pancake-swap-core.git
+#	branch = 3b214306770e86bc3a64e67c2b5bdb566b4e94a7
+[submodule "submodules/periphery"]
+	path = submodules/periphery
+	url = git@github.com:pancakeswap/pancake-swap-periphery.git
+#	branch = d769a6d136b74fde82502ec2f9334acc1afc0732
+[submodule "submodules/interface-v1"]
+	path = submodules/interface-v1
+	url = git@github.com:pancakeswap/pancake-swap-interface-v1.git
+#	branch = 0257017f2daaae2f67c24ded70b5829f74a01b3c
