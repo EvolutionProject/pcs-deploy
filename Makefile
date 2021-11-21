@@ -1,8 +1,4 @@
-WALLET=0xC209E1cb090D0895d66291f2617E382673d17ae2
-
-.PHONY: deploy
-
-all: prep merge truffle
+all: merge truffle
 
 dirs: 
 	mkdir -p artifacts/
@@ -13,7 +9,6 @@ prep:
 
 merge: prep
 	npx sol-merger submodules/core/contracts/PancakeFactory.sol ./truffle/PancakeFactory/contracts
-#	npx sol-merger submodules/core/contracts/PancakePair.sol ./contracts/
 	npx sol-merger submodules/periphery/contracts/PancakeRouter01.sol ./truffle/PancakeRouter/contracts
 	npx sol-merger submodules/periphery/contracts/PancakeRouter.sol ./truffle/PancakeRouter/contracts
 
