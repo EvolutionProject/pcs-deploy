@@ -1,6 +1,6 @@
 # pcs-deploy
 
-This repository contains artifacts necessary for deployment of PancakeSwap smart contracts to your local development ethereum instance.
+This repository contains artifacts necessary for deployment of [PancakeSwap](https://pancakeswap.finance/) smart contracts to your local development ethereum instance (e.g. [Ganache](https://www.trufflesuite.com/ganache)).
 
 It is based on this post: https://nhancv.com/host-your-own-pancakeswap-testnet/, but it does not deploy Frontend
 
@@ -16,6 +16,6 @@ make
 
 The Truffle configs in `truffle/COMPONENT` subdirs assume your network runs on `localhost:7778` with chain ID `4321`. You might need to change your local environment config or the network config in the `truffle-config.js` files.
 
-`Makefile` also uses `sol-merger` and `jq`
+`Makefile` also uses `sol-merger` and `jq` tools.
 
-You can find the addresses of deployed contracts in JSON files in directory `artifacts/`
+You can find the addresses of deployed contracts in JSON files in directory `artifacts/`.
